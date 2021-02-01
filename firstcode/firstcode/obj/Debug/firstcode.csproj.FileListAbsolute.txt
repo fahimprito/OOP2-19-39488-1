@@ -1,0 +1,5 @@
+G:\c sharp\firstcode\firstcode\bin\Debug\firstcode.exe.config
+G:\c sharp\firstcode\firstcode\bin\Debug\firstcode.exe
+G:\c sharp\firstcode\firstcode\bin\Debug\firstcode.pdb
+G:\c sharp\firstcode\firstcode\obj\Debug\firstcode.exe
+G:\c sharp\firstcode\firstcode\obj\Debug\firstcode.pdb

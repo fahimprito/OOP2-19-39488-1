@@ -1,0 +1,6 @@
+G:\c sharp\basic_code\basic_code\bin\Debug\basic_code.exe.config
+G:\c sharp\basic_code\basic_code\obj\Debug\basic_code.csprojResolveAssemblyReference.cache
+G:\c sharp\basic_code\basic_code\bin\Debug\basic_code.exe
+G:\c sharp\basic_code\basic_code\bin\Debug\basic_code.pdb
+G:\c sharp\basic_code\basic_code\obj\Debug\basic_code.exe
+G:\c sharp\basic_code\basic_code\obj\Debug\basic_code.pdb
