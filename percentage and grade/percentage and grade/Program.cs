@@ -10,6 +10,11 @@ namespace percentage_and_grade
     {
         static void Main(string[] args)
         {
+            int phy=88, chem=85, bio=87, math=90, com=92, percentage;
+            percentage = (phy + chem + bio + math + com) / 5;
+            Console.WriteLine("percentage of grade {0}", percentage);
+
+
 
         }
     }
