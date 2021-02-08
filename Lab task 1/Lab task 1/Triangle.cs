@@ -22,7 +22,10 @@ namespace Lab_task_1
         {
             if (x == y && y == z)
                 Console.WriteLine("the triangle is equilateral");
-           
+            else if ((x==y) || (y==z) || (z==x))
+                Console.WriteLine("the triangle is isosceles");
+            else
+                Console.WriteLine("the triangle is scalene");
         }
 
     }
