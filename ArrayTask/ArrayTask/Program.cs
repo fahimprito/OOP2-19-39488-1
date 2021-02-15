@@ -11,9 +11,9 @@ namespace ArrayTask
         static void Main(string[] args)
         {
             int cc=1, ctr=0;
-            int[] arr1 = new int[] { 2, 3, 4, 5, 6 };
+            int[] arr1 = new int[] { 2, 3, 3, 5, 6 };
             int[] arr2 = new int[5];
-            int[] arr3 = new int[5];
+            int[] arr3 = new int[5];// { 2, 2, 6, 5, 5, 4, 4, 3 };
 
             Console.WriteLine("Values of the array are : \n");
             for (int i = 0; i < arr1.Length; i++)
@@ -51,11 +51,12 @@ namespace ArrayTask
             }
             Console.WriteLine(" ");
 
+            //duplicate
             for (int i = 0; i < arr1.Length; i++)
             {
                 for (int j = 0; j < arr1.Length; j++)
                 {
-                    if (arr1[i] == arr2[i])
+                    if (arr1[i] == arr2[j])
                     {
                         arr3[j] = cc;
                         cc++;
@@ -69,10 +70,34 @@ namespace ArrayTask
                 {
                     ctr++;
                 }
-                Console.WriteLine("Duplicate elements are: {0}", ctr);
-                Console.WriteLine(" ");
             }
+            Console.WriteLine("Duplicate elements are: {0}", ctr);
+            Console.WriteLine(" ");
 
+            //unique
+            for (int i = 0; i < arr1.Length; i++)
+            {
+                int unique = 0;
+                for (int j = i + 1; j < arr1.Length; j++)
+                {
+                    if (arr1[i] == arr1[j])
+                    {
+                        unique = 1;
+
+                    }
+                    if (arr1[i] == arr1[i + 1])
+                    {
+                        i++;
+                    }
+
+
+                }
+                if (unique == 0)
+                {
+                    Console.WriteLine("unique number: {0}", arr1[i]);
+                }
+            
+            }
         }
     }
 }
