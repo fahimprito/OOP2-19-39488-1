@@ -29,12 +29,7 @@ namespace lab_task_account
             set { balance = value; }
             get { return balance; }
         }
-        public void Account()
-        {
-            this.accName = null;
-            this.accid = null;
-            this.Balance = null;
-        }
+        public Account() { }
 
         public Account(string accName, string accid, int balance)
         {
@@ -56,18 +51,20 @@ namespace lab_task_account
         {
             balance = balance - amount;
             {
-                Console.WriteLine("{0}TK Money withdraw in your Account", amount);
+                Console.WriteLine("{0}TK Money withdraw from your Account", amount);
                 Console.WriteLine("New Balance {0}TK", balance);
                 Console.WriteLine("");
             }
         }
 
-        void transfer(int amount, Account acc)
+        public void transfer(int amount, Account acc)
         {
             if (amount <= balance)
             {
                 balance = balance - amount;
                 acc.balance = amount + balance;
+                Console.WriteLine("Balance Transfered {0}TK", amount);
+                Console.WriteLine("New Balance {0}TK", balance);
             }
             else
             {
@@ -75,7 +72,7 @@ namespace lab_task_account
             }
         }
 
-        
+
 
     }
 

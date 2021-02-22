@@ -11,10 +11,34 @@ namespace lab_task_account
         public Savings(string accName, string accid, int balance)
             : base(accName, accid, balance)
         {
-            maximumTransaction = 100;
+
+        }
+        public Savings() { }
+        new public void Withdraw(int amount)
+        {
+            if (base.Balance - amount >= 430 )
+            {
+                base.Withdraw(amount);
+            }
+            else
+            {
+                Console.WriteLine("withdraw is not possible for insufficient balance");
+            }
+        }
+        new public void transfer(int amount, Account acc)
+        {
+            if ((base.Balance - amount) >= 430)
+            {
+                base.transfer(amount, acc);
+            }
+                
+            else
+            {
+                Console.WriteLine("Insaficient Balance."); 
+                Console.WriteLine();
+            }
+                
         }
 
-
-        public int maximumTransaction { get; set; }
     }
 }
